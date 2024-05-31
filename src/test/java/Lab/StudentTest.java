@@ -35,7 +35,6 @@ class StudentTest {
         double actual = student.getTotalStudyTime();
         Assertions.assertEquals(expectedTime,actual);
 
-        //then
     }
 
 }

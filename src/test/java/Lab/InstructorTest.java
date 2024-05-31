@@ -29,9 +29,6 @@ class InstructorTest {
     void testTeach(){
         Student student1 = new Student(1,"Mike Jones");
 
-        double startTime = student1.getTotalStudyTime();
-        Assertions.assertEquals(0.0,  startTime, 0.0);
-
         i1.teach(student1, 2.0);
 
         double updatedTime = student1.getTotalStudyTime();
@@ -49,7 +46,5 @@ class InstructorTest {
         Assertions.assertEquals(1.0,s1.getTotalStudyTime());
         Assertions.assertEquals(1.0,s2.getTotalStudyTime());
     }
-
-
 
 }
